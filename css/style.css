@@ -97,21 +97,14 @@ nav a:hover {
 
 #showcase {
   height: 75vh;
-  background-color: #039be5;
+  background-color: rgb(21, 23, 71);
   padding: 100px;
   font-family: "Dosis";
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/*#showcase h1,
-#showcase h3 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}*/
-
 #showcase h1 {
-  margin-top: 200px;
   margin-bottom: -25px;
   color: rgb(255, 255, 255);
   font-size: 6rem;
@@ -126,7 +119,7 @@ nav a:hover {
 }
 
 .highlight {
-  background-color: rgb(4, 50, 75);
+  background-color: rgb(93, 69, 191);
 }
 
 .btn {
@@ -140,28 +133,28 @@ nav a:hover {
 
 .cv-btn {
   color: #131313;
-  background-color: rgb(255, 160, 0);
+  background-color: rgb(122, 206, 250);
   margin-right: 15px;
 }
 
 .contact-btn {
   color: #ffffff;
-  background-color: rgb(80, 66, 129);
+  background-color: rgb(136, 23, 157);
 }
 
 .cv-btn:hover {
   transition: 0.2s ease-out;
-  background-color: rgb(222, 112, 0);
+  background-color: rgba(122, 206, 250, 0.8);
 }
 
 .contact-btn:hover {
   transition: 0.2s ease-out;
-  background-color: rgb(55, 42, 98);
+  background-color: rgba(136, 23, 157, 0.8);
 }
 
 .showcase-img {
-  float: right;
-  margin: 20px;
+  margin-top: 25px;
+  justify-self: stretch;
 }
 
 /* about */
@@ -190,6 +183,7 @@ nav a:hover {
 #about p {
   font-size: 1.4rem;
   font-family: "Hind-light";
+  text-align: justify;
 }
 
 #about a {
@@ -278,11 +272,12 @@ nav a:hover {
 }
 
 #code {
-  color: #111111;
-  background-color: rgb(88, 203, 255);
+  color: #fff;
+  background-color: rgba(38, 127, 229, 0.8);
 }
 
 #code:hover {
+  color: #111;
   transition: 0.2s ease-out;
   border: 1px dotted #111111;
   background-color: inherit;
@@ -291,7 +286,7 @@ nav a:hover {
 /* contact form */
 
 #contact {
-  background-color: #039be5;
+  background-color: rgb(38, 127, 229);
   margin: 0 auto;
   padding: 50px;
   color: #111111;
@@ -387,8 +382,7 @@ nav a:hover {
 .contact-us .contact-btn {
   text-decoration: none;
   text-transform: uppercase;
-  color: #111;
-  background-color: #c9e6ff;
+  background-color: rgb(93, 69, 191);
   display: block;
   text-align: center;
   border-radius: 25px;
@@ -401,12 +395,12 @@ nav a:hover {
 
 .contact-us .contact-btn:hover,
 .contact-us .contact-btn:focus {
-  color: #fff;
-  background: #92bde7;
+  background-color: rgba(93, 69, 191, 0.8);
   outline: 0;
 }
 
 /* footer */
+
 footer {
   text-transform: initial;
   font-size: 1rem;
@@ -420,9 +414,39 @@ footer {
 }
 
 /* media queries */
-@media (max-width: 1400px) {
+
+@media (max-width: 1815px) {
+  .showcase-img {
+    width: 844px;
+    height: 626px;
+  }
+}
+
+@media (max-width: 1715px) {
+  .showcase-img {
+    margin-top: 100px;
+    width: 744px;
+    height: 552px;
+  }
+}
+
+@media (max-width: 1615px) {
+  .showcase-img {
+    margin-top: 175px;
+    width: 644px;
+    height: 478px;
+  }
+}
+
+@media (max-width: 1520px) {
   #showcase {
-    height: 80vh;
+    text-align: center;
+    display: block;
+    height: 82vh;
+  }
+
+  .showcase-img {
+    margin-top: 0;
   }
 }
 
@@ -449,7 +473,7 @@ footer {
 
 @media (max-width: 900px) {
   #showcase {
-    height: 60vh;
+    height: 75vh;
     text-align: center;
   }
 
@@ -469,31 +493,16 @@ footer {
 
   .cv-btn {
     color: #131313;
-    background-color: rgb(255, 160, 0);
     margin-right: 15px;
   }
 
   .showcase-img {
-    width: 500px;
-    height: 265px;
+    width: 544px;
+    height: 403px;
   }
 }
 
 @media (max-width: 850px) {
-  #showcase {
-    height: 75vh;
-    text-align: center;
-  }
-
-  .showcase-img {
-    width: 400px;
-    height: 212px;
-  }
-
-  #showcase {
-    padding: 20px;
-  }
-
   #about img {
     display: block;
   }
@@ -507,6 +516,29 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
   }
+
+  #portfolio {
+    background-repeat: repeat-y;
+  }
+}
+
+@media (max-width: 772px) {
+  #showcase {
+    padding: 25px;
+  }
+
+  #showcase h1 {
+    font-size: 4.5rem;
+  }
+
+  #showcase h3 {
+    font-size: 1.5rem;
+  }
+
+  .showcase-img {
+    width: 444px;
+    height: 329px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -516,6 +548,12 @@ footer {
   nav a {
     font-size: 0.9rem;
     margin-right: 5px;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
 
@@ -552,16 +590,12 @@ footer {
 
   #about img {
     height: 350px;
+    margin-bottom: 20px;
   }
 
   #about p {
-    font-size: 1.5rem;
-  }
-
-  .columns {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    margin: 20px;
+    font-size: 1rem;
   }
 
   #contact {
@@ -604,10 +638,6 @@ footer {
 
   #about img {
     height: 325px;
-  }
-
-  #about p {
-    font-size: 1.2rem;
   }
 
   #contact {
