@@ -11,14 +11,3 @@ for (const link of navLinks) {
 }
 
 const home = document.querySelector("#first");
-
-if (window.screenY > 400) {
-  home.classList.add("active");
-}
-
-document.addEventListener("click", whereMouse);
-
-function whereMouse(e) {
-  console.log(e);
-  console.log(window.screen);
-}
