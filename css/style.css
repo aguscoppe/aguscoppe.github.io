@@ -72,24 +72,31 @@ nav a:hover {
 /* showcase */
 
 #showcase {
-  height: 50vh;
+  height: 35vh;
   font-family: "Dosis";
-  background-image: url("../img/polygon2.jpg");
+  background-image: url(https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+}
+
+#showcase .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #showcase h1 {
+  text-align: center;
   margin-bottom: -25px;
   color: rgb(255, 255, 255);
-  font-size: 6rem;
+  font-size: 6.5rem;
   font-weight: lighter;
 }
 
 #showcase h3 {
+  text-align: center;
   font-family: "Hind-light";
   font-size: 2.5rem;
   font-weight: lighter;
@@ -98,27 +105,6 @@ nav a:hover {
 .highlight {
   padding: 0 15px;
   background-color: rgba(255, 255, 255, 0.8);
-}
-
-.btn {
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 20px 50px;
-  border-radius: 100px;
-  display: inline-block;
-  letter-spacing: 2px;
-}
-
-.cv-btn {
-  color: #131313;
-  background-color: rgb(122, 206, 250);
-  border: 1px solid rgb(122, 206, 250);
-}
-
-.cv-btn:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
 }
 
 /* about */
@@ -265,11 +251,11 @@ section #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
-}
-
-#contact .contact-info {
   padding: 25px 0;
   color: #ffffff;
+}
+
+#contact .contact-info:not(:last-of-type) {
   border-bottom: 1px solid #ffffff;
 }
 
@@ -310,7 +296,6 @@ footer {
 
 @media (max-width: 1520px) {
   #showcase {
-    /*text-align: center;*/
     display: block;
   }
 }
@@ -369,11 +354,6 @@ footer {
     font-size: 2rem;
   }
 
-  .btn {
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-
   .cv-btn {
     color: #131313;
     margin-right: 15px;
@@ -417,12 +397,15 @@ footer {
 
 @media (max-width: 580px) {
   nav {
+    display: block;
+    align-items: center;
     justify-content: center;
   }
   nav a {
     font-size: 0.9rem;
     margin-right: 5px;
   }
+
   #about .about-img img {
     height: 250px;
   }
@@ -441,10 +424,6 @@ footer {
 
   #showcase h3 {
     font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 20px;
   }
 
   #about {
