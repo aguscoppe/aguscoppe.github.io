@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Dosis";
+  font-family: 'Dosis';
   src: url(../fonts/Dosis/dosis_[allfont.es].ttf);
 }
 
 @font-face {
-  font-family: "Hind";
+  font-family: 'Hind';
   src: url(../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Hind-light";
+  font-family: 'Hind-light';
   src: url(../fonts/Hind_Siliguri/HindSiliguri-Light.ttf);
 }
 
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Hind";
+  font-family: 'Hind';
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -73,7 +73,7 @@ nav a:hover {
 
 #showcase {
   height: 35vh;
-  font-family: "Dosis";
+  font-family: 'Dosis';
   background-image: url(https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +97,7 @@ nav a:hover {
 
 #showcase h3 {
   text-align: center;
-  font-family: "Hind-light";
+  font-family: 'Hind-light';
   font-size: 2.5rem;
   font-weight: lighter;
 }
@@ -139,14 +139,14 @@ section #about {
 
 #about p {
   font-size: 1.2rem;
-  font-family: "Hind-light";
+  font-family: 'Hind-light';
   text-align: justify;
 }
 
 /* portfolio */
 
 #portfolio {
-  background-image: url("../img/dot3.png");
+  background-image: url('../img/dot3.png');
   background-repeat: repeat-x;
 }
 
@@ -165,7 +165,7 @@ section #about {
 
 .column {
   background-color: #fff;
-  height: 475px;
+  height: 425px;
   width: 250px;
   margin-bottom: 100px;
   border-radius: 15px;
@@ -178,14 +178,14 @@ section #about {
   border-radius: 15px 15px 0 0;
 }
 
-.column h4,
+.column h3 {
+  text-align: center;
+}
+
+.column h3,
 .column p {
   margin: 5px;
   padding: 0 25px;
-}
-
-.column p {
-  text-align: justify;
 }
 
 .column p > a {
@@ -230,7 +230,7 @@ section #about {
 
 #contact {
   margin: 0 auto;
-  font-family: "Hind";
+  font-family: 'Hind';
   background-color: rgb(0, 0, 0);
 }
 
@@ -286,7 +286,7 @@ footer {
   font-size: 1rem;
   padding: 5px;
   background-color: rgb(212, 212, 212);
-  font-family: "Hind-light";
+  font-family: 'Hind-light';
   font-weight: normal;
   margin: 0 auto;
   text-align: center;
