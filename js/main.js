@@ -1,13 +1,40 @@
-const navLinks = document.querySelectorAll(".nav-link");
+// ACTIVE NAV LINK
+function isVisible(domElement) {
+  return new Promise((resolve) => {
+    const o = new IntersectionObserver(([entry]) => {
+      resolve(entry.intersectionRatio === 1);
+      o.disconnect();
+    });
+    o.observe(domElement);
+  });
+}
 
-for (const link of navLinks) {
-  link.addEventListener("click", function(event) {
-    if (event) {
-      for (let i = 0; i < navLinks.length; i++)
-        navLinks[i].classList.remove("active");
-      event.target.classList.add("active");
+async function addActiveStyle() {
+  const header = document.querySelector('#header');
+  const sections = document.querySelectorAll('section');
+  [header, ...sections].forEach(async (element) => {
+    const visible = await isVisible(element);
+    if (visible) {
+      const navLink = document.querySelectorAll('nav .links a');
+      navLink.forEach((currentLink) => {
+        const currentId = currentLink.href.split('#')[1];
+        if (currentId === element.id) {
+          const currentActive = document.querySelector('.active');
+          currentActive.classList.remove('active');
+          currentLink.classList.add('active');
+        }
+      });
     }
   });
 }
 
-const home = document.querySelector("#first");
+// BURGER MENU
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerLinks = document.querySelector('.burger-links');
+
+burgerMenu.addEventListener('click', () => {
+  burgerLinks.style.display = 'flex';
+});
+burgerLinks.addEventListener('click', () => {
+  burgerLinks.style.display = 'none';
+});

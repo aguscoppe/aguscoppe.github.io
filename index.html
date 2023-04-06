@@ -2,147 +2,177 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="./favicon.ico" />
     <title>Agustina Coppe</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/67f9783b55.js"></script>
+    <script
+      src="https://kit.fontawesome.com/67f9783b55.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- nav links -->
-    <nav class="sticky">
-      <ul>
-        <li><a href="#showcase" class="nav-link" id="first">HOME</a></li>
-        <li><a href="#about" class="nav-link" id="second">SOBRE MÍ</a></li>
-        <li><a href="#portfolio" class="nav-link" id="third">PORTFOLIO</a></li>
-        <li><a href="#contact" class="nav-link" id="fourth">CONTACTO</a></li>
+    <!-- navigation -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#header">
+              <i class="fa-solid fa-file-code"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="links">
+          <li><a href="#header" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a href="./files/Coppe_María_Agustina_CV.pdf" target="_blank"
+              ><span> RESUME</span></a
+            >
+          </li>
+        </ul>
+        <ul class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </ul>
+      </div>
+      <ul class="burger-links">
+        <li><a href="#header" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="./files/Coppe_María_Agustina_CV.pdf" target="_blank"
+            ><span> Resume</span></a
+          >
+        </li>
       </ul>
     </nav>
-
-    <!-- showcase -->
-    <header id="showcase">
+    <!-- header -->
+    <header id="header">
       <div class="container">
-        <h1>AGUSTINA COPPE</h1>
-        <h3><span class="highlight">Desarrolladora de Software</span></h3>
+        <h5>Hi, my name is</h5>
+        <h1>Agustina Coppe</h1>
+        <h3>
+          <span class="content1">
+            I'm a software development technician specializing in building
+            exceptional digital experiences.
+          </span>
+          <span>
+            Currently, I'm focused on building accessible, human-centered
+            products at Endava.
+          </span>
+        </h3>
+        <a href="#contact"><button>CONTACT</button></a>
       </div>
     </header>
-
     <!-- about -->
-    <section class="box">
-      <div id="about">
-        <div class="about-img">
-          <img src="./img/image.png" alt="" />
-        </div>
+    <section id="about">
+      <h1>ABOUT</h1>
+      <div class="container">
         <div class="about-text">
-          <h1>Sobre mí</h1>
           <p>
-            Me llamo María Agustina Coppe, me recibí en la Universidad del
-            Salvador en 2019 como Traductora Científico Literaria en Inglés. Ese mismo año comencé a formarme como Desarrolladora Web.
+            I'm a software development technician specializing in building
+            exceptional digital experiences. Currently, I'm focused on building
+            accessible, human-centered products at Endava.
           </p>
           <p>
-            Tengo conocimientos tanto en tecnologías back-end (Node.JS, Python,
-            Java) como front-end (Typescript, Javascript, HTML, CSS). También he trabajado
-            con frameworks como ReactJS, VueJS y Express.
+            My strengths as a professional lie in the use of clean code,
+            continuous training, dynamic interaction with the client and a
+            methodical approach to my daily work tasks.
           </p>
-          <p>
-            Actualmente, trabajo como Desarrolladora de Software y curso la
-            Tecnicatura Universitaria en Desarrollo de Software en la
-            Universidad Argentina de la Empresa.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- portfolio -->
-    <section id="portfolio">
-      <div class="box">
-        <h1>Portfolio</h1>
-        <div class="columns">
-          <div class="column" id="col1">
-            <a href="https://bybtraducciones.com" target="_blank">
-              <img src="img/byb.png" alt="" />
-            </a>
-            <h3>B&B Traducciones</h3>
-            <p>
-              Diseño y desarrollo del sitio web profesional de los traductores
-              Matías Borich y Agustina Bartocci.
-            </p>
-            <p><strong>Tecnología:</strong> ReactJS</p>
-            <div class="small-btns">
-              <a
-                href="https://github.com/aguscoppe/bb_traducciones"
-                target="_blank"
-                class="small-btn code"
-                >GitHub</a
-              >
-            </div>
-          </div>
-          <div class="column" id="col2">
-            <a href="https://jasoc.com.ar/" target="_blank">
-              <img src="img/ruibal.png" alt="" />
-            </a>
-            <h3>Bettina S. Ruibal</h3>
-            <p>
-              Diseño y desarrollo del sitio web profesional de la abogada
-              Bettina S. Ruibal.
-            </p>
-            <p><strong>Tecnologías:</strong> PHP, JavaScript, HTML, CSS.</p>
-            <div class="small-btns">
-              <a
-                href="https://github.com/aguscoppe/estudio-ruibal"
-                target="_blank"
-                class="small-btn code"
-                >GitHub</a
-              >
-            </div>
-          </div>
-          <div class="column" id="col3">
-            <a href="http://estereo-picnic.herokuapp.com/" target="_blank">
-              <img src="img/estereo-picnic.png" alt="" />
-            </a>
-            <h3>Festival Estéreo Picnic</h3>
-            <p>
-              Propuesta de diseño para la edición 2022 del Festival Estéreo
-              Picnic.
-            </p>
-            <p><strong>Tecnologías: </strong> JavaScript, HTML, CSS.</p>
-            <div class="small-btns">
-            <a
-              href="https://github.com/aguscoppe/estereo-picnic"
-              target="_blank"
-              class="small-btn code"
-              >GitHub</a
-            >
+          <p>Here are a few technologies I've been working with recently:</p>
+          <div class="skills">
+            <button>React</button>
+            <button>TypeScript</button>
+            <button>JavaScript</button>
+            <button>Material UI</button>
+            <button>React Query</button>
+            <button>React Testing Library</button>
+            <button>Git workflow</button>
           </div>
         </div>
+        <img src="./files/about.jpeg" alt="" />
       </div>
     </section>
-
-    <!-- contact form -->
+    <!-- work -->
+    <section id="work">
+      <h1>WORK</h1>
+      <div class="container">
+        <a href="https://bybtraducciones.com/" target="_blank" class="project">
+          <div class="icon-container">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <h2>B&B Translations</h2>
+          <p>
+            Design and development of professional website for a team of
+            translators using ReactJS.
+          </p>
+        </a>
+        <a href="https://jasoc.com.ar/" target="_blank" class="project">
+          <div class="icon-container">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <h2>Ruibal Law Firm</h2>
+          <p>
+            Design and development of website for a professional freelance
+            lawyer using JavaScript, HTML and CSS.
+          </p>
+        </a>
+        <a
+          href="https://estereopicnic.netlify.app/"
+          target="_blank"
+          class="project"
+        >
+          <div class="icon-container">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <h2>Estéreo Picnic</h2>
+          <p>
+            Create a new design for a music festival brand concept. Website
+            developed using JavaScript, HTML and CSS.
+          </p>
+        </a>
+      </div>
+    </section>
+    <!-- contact -->
     <section id="contact">
-      <h1>Contacto</h1>
-      <div class="contact-info-container">
-        <div class="contact-info">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:aguscoppe@gmail.com">aguscoppe@gmail.com</a>
-        </div>
-        <div class="contact-info">
-          <i class="fab fa-linkedin-in"></i>
-          <a href="https://linkedin.com/in/aguscoppe" target="_blank">
-            /in/aguscoppe</a
-          >
-        </div>
-        <div class="contact-info">
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/aguscoppe" target="_blank"> /aguscoppe</a>
-        </div>
+      <div class="container">
+        <h5>What's next?</h5>
+        <h1>Get in Touch</h1>
+        <h3>
+          <span class="content1">
+            Although I'm not currently looking for any new opportunities, my
+            inbox is always open.
+          </span>
+          <span>
+            Whether you have a question or just want to say hi, I'll try my best
+            to get back to you!
+          </span>
+        </h3>
+        <a href="mailto:aguscoppe@gmail.com" target="_blank"
+          ><button>SAY HELLO</button></a
+        >
       </div>
     </section>
-
     <!-- footer -->
     <footer>
-      <p>Agustina Coppe &copy; 2022</p>
+      <div class="container">
+        <div class="links">
+          <a href="https://linkedin.com/in/aguscoppe" target="_blank">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:aguscoppe@gmail.com"
+            ><i class="fa-solid fa-at"></i
+          ></a>
+          <a href="https://github.com/aguscoppe" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <p>Agustina Coppe &copy; 2023</p>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>
