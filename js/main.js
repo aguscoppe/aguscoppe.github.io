@@ -28,6 +28,8 @@ async function addActiveStyle() {
   });
 }
 
+window.addEventListener('scroll', addActiveStyle);
+
 // BURGER MENU
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerLinks = document.querySelector('.burger-links');
