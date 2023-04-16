@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-  --primary: #bb86fc;
-  --secondary: #3700b3;
-  --tertiary: #03dac6;
-  --dark-bg: #2d2d45;
-  --darker-bg: #1f1e2c;
-  --darkest-bg: #18171e;
+  --primary: #3EB489;
+  --dark-bg: #333333;
+  --darker-bg: #222222;
+  --darkest-bg: #111111;
   --black: #1e1e1e;
   --white: #eeeeee;
   --gray: #ccc;
