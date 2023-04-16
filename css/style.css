@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --primary: #5FC19D;
@@ -16,7 +16,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: var(--white);
-  font-family: 'Roboto';
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
