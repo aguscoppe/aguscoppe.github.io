@@ -19,7 +19,7 @@
 }
 
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
@@ -38,7 +38,7 @@
   scroll-behavior: smooth;
   color: var(--white);
   font-family: 'Rubik', sans-serif;
-  scrollbar-width: none;
+  scrollbar-width: auto;
   scrollbar-color: var(--primary) ##00FFFFFF;
 }
 
