@@ -18,6 +18,19 @@
   background: var(--primary);
 }
 
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5fc19d;
+  border-radius: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +38,8 @@
   scroll-behavior: smooth;
   color: var(--white);
   font-family: 'Rubik', sans-serif;
+  scrollbar-width: none;
+  scrollbar-color: #5fc19d #cccccc;
 }
 
 a {
