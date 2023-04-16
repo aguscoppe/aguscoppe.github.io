@@ -7,7 +7,7 @@
   --darkest-bg: #111111;
   --black: #1e1e1e;
   --white: #eeeeee;
-  --gray: #ccc;
+  --gray: #cccccc;
 }
 
 ::selection {
@@ -23,11 +23,11 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #cccccc;
+  background: #00FFFFFF;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #5fc19d;
+  background-color: var(--primary);
   border-radius: 16px;
 }
 
@@ -39,7 +39,7 @@
   color: var(--white);
   font-family: 'Rubik', sans-serif;
   scrollbar-width: none;
-  scrollbar-color: #5fc19d #cccccc;
+  scrollbar-color: var(--primary) ##00FFFFFF;
 }
 
 a {
