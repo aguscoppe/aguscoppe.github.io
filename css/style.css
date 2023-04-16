@@ -10,6 +10,14 @@
   --gray: #ccc;
 }
 
+::selection {
+  background: var(--primary);
+}
+
+::-moz-selection {
+  background: var(--primary);
+}
+
 * {
   margin: 0;
   padding: 0;
