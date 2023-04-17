@@ -58,11 +58,15 @@ li {
 /* NAV */
 
 nav {
-  background-color: var(--darker-bg);
+  background-color: transparent;
   position: fixed;
   width: 100%;
   height: 8vh;
   z-index: 2;
+}
+
+.scrolled {
+  background-color: var(--darker-bg);
 }
 
 nav .container {
