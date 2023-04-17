@@ -11,7 +11,7 @@ function isVisible(domElement) {
 
 async function addActiveStyle() {
   const header = document.querySelector('#header');
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section');  
   [header, ...sections].forEach(async (element) => {
     const visible = await isVisible(element);
     if (visible) {
@@ -26,6 +26,12 @@ async function addActiveStyle() {
       });
     }
   });
+  const navbar = document.querySelector('nav');
+  if (window.scrollY > 75) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
 }
 
 window.addEventListener('scroll', addActiveStyle);
